@@ -11697,7 +11697,6 @@ pre .code {
 .about-section .about-card:last-child {
   border-right: none;
 }
-
 .contact {
   position: relative;
   min-height: 700px;
@@ -11707,12 +11706,12 @@ pre .code {
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 10px 0;
 }
 
@@ -11792,10 +11791,6 @@ pre .code {
 */
 
 
-
-
-
-
 /* Добавляем стили для затемненного фона */
 .contact-overlay {
   position: absolute;
@@ -11804,7 +11799,8 @@ pre .code {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1; /* Помещаем его под контентные блоки */
+  z-index: -1;
+  /* Помещаем его под контентные блоки */
   border-radius: 10px;
 }
 
@@ -11813,8 +11809,31 @@ pre .code {
 .contact-info-card {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
-  padding: 10px; /* Уменьшаем внутренний отступ */
-  margin-bottom: 10px; /* Уменьшаем внешний отступ */
+  padding: 10px;
+  /* Уменьшаем внутренний отступ */
+  margin-bottom: 10px;
+  /* Уменьшаем внешний отступ */
 }
 
 
+.contact {
+  background-image: url('path/to/public_html/headerr.jpg');
+  /* Замените 'your-image-url.jpg' на путь к вашему изображению */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 10px 0;
+  /* Измените значения padding по вашему усмотрению */
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Затемненный фон */
+}
