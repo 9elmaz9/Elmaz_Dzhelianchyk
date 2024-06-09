@@ -11847,3 +11847,31 @@ pre .code {
   margin: 0 auto;
   display: inline-block;
 }
+ /* Основные стили для тела и контейнера */
+ body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  flex: 1;
+}
+/* Стили для футера */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+/* Стили для центровки заголовка "Contact me" */
+.contact-form-card {
+  text-align: center;
+}
+.contact-title {
+  margin: 0 auto;
+  display: inline-block;
+}
