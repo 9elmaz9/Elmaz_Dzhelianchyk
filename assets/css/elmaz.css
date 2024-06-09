@@ -11830,3 +11830,20 @@ pre .code {
   background-color: rgba(0, 0, 0, 0.5);
   /* Затемненный фон */
 }
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+ /* Стили для центровки заголовка "Contact me" */
+ .contact-form-card {
+  text-align: center;
+}
+.contact-title {
+  margin: 0 auto;
+  display: inline-block;
+}
